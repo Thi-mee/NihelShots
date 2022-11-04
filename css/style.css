@@ -1,0 +1,241 @@
+header {
+  margin-top: var(--nav-height);
+  height: calc(110vh - var(--nav-height));
+  background-color: var(--lighter-bg-color);
+  /* background-color: rgba(29, 6, 31, 0.689); */
+  background-image: url("../assets/investor-bg.JPG");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1000;
+}
+header .title h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: bolder;
+  line-height: 1.1;
+  position: absolute;
+  top: 10vh;
+  left: 1em;
+  width: 18%;
+}
+header .title span {
+  color: var(--primary-color);
+}
+header .title p {
+  font-size: 1.7rem;
+  max-width: 30ch;
+  text-align: right;
+  font-weight: bold;
+  position: absolute;
+  top: 3em;
+  right: 3em;
+  color: var(--text-color-dull);
+}
+header .title .name {
+  font-size: 2.5rem;
+}
+
+.aside-one {
+  display: flex;
+  flex-direction: column;
+  margin-block: 3em;
+  gap: 1em;
+  align-items: center;
+  text-align: center;
+}
+.aside-one h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.aside-one .ctab {
+  background-color: var(--ctab-color);
+  padding: 1em 2em;
+  color: #fff;
+  text-decoration: none;
+  transition: background 150ms ease, scale 150ms ease;
+}
+.aside-one .ctab:hover {
+  background-color: var(--bg-color);
+  border: 1px solid #fff;
+  transform: scale(1.1);
+}
+.section-one {
+  min-height: 100vh;
+  background-color: var(--lighter-bg-color);
+  background-image: url("../assets/my_masterpiece.JPG");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-one .section-wrapper {
+  width: 85%;
+  margin-block: 5em;
+  padding: 2em 3em 3em;
+  background-color: rgba(47, 15, 50, 0.482);
+  backdrop-filter: blur(10px) grayscale(0.5);
+  border-radius: 2em;
+}
+.section-one .section-wrapper h2 {
+  text-shadow: 0 0 6px #000;
+  font-size: 2.5rem;
+  
+}
+.section-one .wrap{
+  margin-top: 1.5em;
+  
+  display: flex;
+  justify-content: space-around;
+}
+.section-one .wrap .column{
+  background-color: rgba(48, 19, 48, 0.551);
+  border-radius: 15px;
+  padding: 2em;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  width: max(40%, 200px);
+  box-shadow:  0 0 15px rgba(169, 49, 169, 0.381);
+}
+.section-one .wrap .column h3{
+  color: #cbc;
+}
+
+.section-one .wrap .column ul{
+  padding-left: 3em;
+  list-style: circle;
+}
+
+
+.aside-two {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-block: 3em;
+  color: rgb(171, 151, 175);
+}
+.aside-two .aside-content {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  width: 65ch;
+}
+.section-two {
+  min-height: 100vh;
+  background-color: var(--lighter-bg-color);
+  background-image: url("../assets/mybaby.JPG");
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside-three {
+  height: 50vh;
+  position: relative;
+  background-color: transparent;
+}
+.aside-three .aside-content {
+  position: absolute;
+  z-index: 10;
+}
+
+.section-three {
+  min-height: 100vh;
+  background-color: var(--lighter-bg-color);
+  background-image: url("../assets/ores.JPG");
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+.section-three h2{
+  font-size: 3rem;
+  margin-block: 1em;
+}
+
+.gallery{
+  width: 80%;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:  "one one two ten"
+                        "one one four three"
+                        "five six six three "
+                        "eight six six nine"
+                        "eight eleven thirteen seven"
+                        "fourteen twelve twelve seven";
+}
+.gallery .image-box{
+  min-height: 150px;
+  position: relative;
+}
+.gallery .image-box.one{
+  grid-area: one;
+}
+.gallery .image-box.two{
+  grid-area: two;
+}
+.gallery .image-box.three{
+  grid-area: three;
+}
+.gallery .image-box.four{
+  grid-area: four;
+}
+.gallery .image-box.five{
+  grid-area: five;
+}
+.gallery .image-box.six{
+  grid-area: six;
+}
+.gallery .image-box.seven{
+  grid-area: seven;
+}
+.gallery .image-box.eight{
+  grid-area: eight;
+}
+.gallery .image-box.nine{
+  grid-area: nine;
+}
+.gallery .image-box.ten{
+  grid-area: ten;
+}
+.gallery .image-box.eleven{
+  grid-area: eleven;
+}
+.gallery .image-box.twelve{
+  grid-area: twelve;
+}
+.gallery .image-box.thirteen{
+  grid-area: thirteen;
+}
+.gallery .image-box.fourteen{
+  grid-area: fourteen;
+}
+.gallery .image-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scrolltotop a{
+  writing-mode:sideways-lr;
+  color: yellow;
+  text-decoration: none;
+  position: fixed;
+  left: 1em;
+  top: 50%;
+  
+}
